@@ -53,7 +53,6 @@ class RepositoriesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         tableView.backgroundView = repositories.count == 0 ? label : nil
         return repositories.count
     }

@@ -25,11 +25,15 @@ class RepositoryViewController: UIViewController {
         webView.allowsBackForwardNavigationGestures = true
         webView.navigationDelegate = self
         webView.load(request)
+        
     }
 }
 
 extension RepositoryViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        loading.stopAnimating()
+        DispatchQueue.main.async {
+            self.loading.stopAnimating()
+        }
+        
     }
 }
