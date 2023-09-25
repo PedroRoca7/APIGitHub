@@ -22,7 +22,6 @@ O APIGitHub funciona da seguinte maneira a API traz os repositórios e o app apr
 ## Pods
 - Alamofire
 - Kingfisher
-- 
 ## Back end
 - API - Github
 - https://docs.github.com/pt/rest?apiVersion=2022-11-28
